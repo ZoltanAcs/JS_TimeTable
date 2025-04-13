@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Editable Timetable</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Editable Timetable</h1>
+
+  <label for="daySelector">Select Day:</label>
+  <select id="daySelector">
+    <option value="Monday">Monday</option>
+    <option value="Tuesday">Tuesday</option>
+    <option value="Wednesday">Wednesday</option>
+    <option value="Thursday">Thursday</option>
+    <option value="Friday">Friday</option>
+  </select>
+
+  <table id="timetable">
+    <thead>
+      <tr>
+        <th>Hour</th>
+        <th>Subject</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <h2>Add New Lesson</h2>
+  <form id="addForm">
+    <input type="number" id="newHour" placeholder="Hour (1-8)" required min="1" max="8" />
+    <input type="text" id="newSubject" placeholder="Subject" required />
+    <button type="submit">Add</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
